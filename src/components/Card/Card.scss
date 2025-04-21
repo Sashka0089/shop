@@ -1,0 +1,25 @@
+.card {
+    margin-top: 48px;
+
+    &__info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        & > :nth-child(3n + 1) {
+            justify-self: start;
+        }
+
+        & > :nth-child(3n + 2) {
+            justify-self: center;
+        }
+
+        & > :nth-child(3n + 3) {
+            justify-self: end;
+        }
+    }
+
+    &__image {
+        max-width: 370px;
+        border-radius: 4px;
+    }
+}

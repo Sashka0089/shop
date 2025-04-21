@@ -1,0 +1,77 @@
+.catalog-header {
+    background: #484283;
+    &__container {
+        max-width: 1210px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+    &__info {
+        margin-top: 115px;
+        padding-bottom: 115px;
+        position: relative;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 139%;
+        color: #fff;
+    }
+    &__text {
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #fff;
+    }
+    &__btn {
+        margin-top: 30px;
+        border-radius: 4px;
+        padding: 20px 50px;
+        width: 207px;
+        height: 62px;
+        background: #f14f4f;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 137%;
+        color: #fff;
+    }
+    &__back {
+        position: absolute;
+        width: 100%;
+        font-weight: 700;
+        font-size: 200px;
+        line-height: 150%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.12);
+    }
+}
+
+.catalog {
+    padding-top: 48px;
+    &__container {
+        max-width: 1210px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 156%;
+        color: #444b58;
+    }
+    &__input {
+        border-radius: 4px;
+        padding: 20px;
+        width: 1180px;
+        height: 62px;
+        background: #f6f6f6;
+        margin-top: 48px;
+        border: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 137%;
+        color: #b2b5bb;
+    }
+}

@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 0px 23px 0px;
+    border-bottom: 1px solid #fff;
+    &__logo {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 147%;
+        color: #fff;
+    }
+    &__ul {
+        display: flex;
+        justify-content: space-between;
+        width: 340px;
+        li {
+            list-style-type: none;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 143%;
+            color: #fff;
+        }
+    }
+    &__cart {
+        display: flex;
+        svg {
+            margin-left: 6px;
+        }
+    }
+}
