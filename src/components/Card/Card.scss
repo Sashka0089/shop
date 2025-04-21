@@ -4,6 +4,7 @@
     &__info {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        row-gap: 28px;
 
         & > :nth-child(3n + 1) {
             justify-self: start;
@@ -21,5 +22,19 @@
     &__image {
         max-width: 370px;
         border-radius: 4px;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+        color: #444b58;
+        margin-top: 4px;
+    }
+    &__price {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 133%;
+        color: #444b58;
+        margin-top: 4px;
     }
 }
