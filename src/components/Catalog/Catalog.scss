@@ -47,8 +47,10 @@
     }
 }
 
-.catalog {
+.starter {
     padding-top: 48px;
+}
+.catalog {
     &__container {
         max-width: 1210px;
         padding-left: 15px;
@@ -75,12 +77,12 @@
         color: #b2b5bb;
     }
 
-    &__btn{
+    &__btn {
         display: flex;
         justify-content: center;
         margin-top: 48px;
     }
-    &__show{
+    &__show {
         border-radius: 4px;
         padding: 20px 50px;
         width: 177px;
@@ -90,6 +92,5 @@
         font-size: 16px;
         line-height: 137%;
         color: #fff;
-       
     }
 }

@@ -1,6 +1,7 @@
 import Card from "../Card/Card";
 import Header from "../Header/Header";
 import "./Catalog.scss";
+import Faq from "../Faq/Faq";
 
 const Catalog = () => {
   return (
@@ -25,17 +26,23 @@ const Catalog = () => {
         </div>
       </section>
 
-      <main className="catalog">
-        <div className="catalog__container">
-          <div className="catalog__title">Catalog</div>
-          <input className="catalog__input" placeholder="Search by title" />
-          <div className="catalog__store">
-            <Card />
-          </div>
+      <main className="starter">
+        <div className="catalog">
+          <div className="catalog__container">
+            <div className="catalog__title">Catalog</div>
+            <input className="catalog__input" placeholder="Search by title" />
+            <div className="catalog__store">
+              <Card />
+            </div>
 
-          <div className="catalog__btn">
-            <div className="catalog__show">Show more</div>
+            <div className="catalog__btn">
+              <div className="catalog__show">Show more</div>
+            </div>
           </div>
+        </div>
+
+        <div className="faq">
+          <Faq />
         </div>
       </main>
     </>
