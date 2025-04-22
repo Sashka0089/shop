@@ -32,6 +32,10 @@ const Catalog = () => {
           <div className="catalog__store">
             <Card />
           </div>
+
+          <div className="catalog__btn">
+            <div className="catalog__show">Show more</div>
+          </div>
         </div>
       </main>
     </>
