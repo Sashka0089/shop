@@ -1,0 +1,19 @@
+.faq{
+    background: #484283;
+    margin-top: 48px;
+
+    &__container{
+        max-width: 910px;
+        padding: 60px 15px 60px 15px;
+        margin: 0 auto;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 156%;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
+
+    }
+}

@@ -1,0 +1,32 @@
+.faqInfo{
+    &__block{
+        border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        position: relative;
+    }
+    &__icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__question{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #fff;
+        
+    }
+    &__answer{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 162%;
+        color: #fff;
+        margin-top: 20px;
+    }
+}
+
+  
