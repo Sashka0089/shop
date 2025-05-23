@@ -29,22 +29,23 @@ const faqInfo = () => {
     },
   ];
 
-  const [answer, setAnswer] = useState<number[]>([]);
+  const [answer, setAnswer] = useState<number[]>([])
 
-  function toogle(id: number) {
-    setAnswer((prev) =>
-      prev.includes(id) ? prev.filter((item) => item !== id) : [...answer, id]
-    );
+  function toggle(id: number) {
+
+    setAnswer((prev) => prev.includes(id) ? prev.filter((item) => item !== id) : [...answer, id]);
+
+
   }
 
   return (
     <div className="faqInfo">
       {faqInfo.map((faq) => (
         <div key={faq.id} className="faqInfo__block">
-          <div className="faqInfo__question">{faq.question}</div>
+          <div className="faqInfo__question" onClick={() => toggle(faq.id)}>{faq.question}</div>
 
           <svg
-            onClick={() => toogle(faq.id)}
+            onClick={() => toggle(faq.id)}
             className="faqInfo__icon"
             width="25"
             height="26"
@@ -58,7 +59,7 @@ const faqInfo = () => {
             />
           </svg>
           <svg
-            onClick={() => toogle(faq.id)}
+            onClick={() => toggle(faq.id)}
             className="faqInfo__icon"
             width="25"
             height="26"
@@ -72,9 +73,9 @@ const faqInfo = () => {
             />
           </svg>
 
-          {answer.includes(faq.id) && (
-            <div className="faqInfo__answer">{faq.answer}</div>
-          )}
+
+          {answer.includes(faq.id) && <div className="faqInfo__answer">{faq.answer}</div>}
+
         </div>
       ))}
     </div>
