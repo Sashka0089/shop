@@ -29,24 +29,24 @@ const faqInfo = () => {
     },
   ];
 
-  const [answer, setAnswer] = useState<number[]>([])
+  const [answer, setAnswer] = useState<number[]>([]);
 
-  function toggle(id: number) {
-
-    setAnswer((prev) => prev.includes(id) ? prev.filter((item) => item !== id) : [...answer, id]);
-
-
+  function visibilityAnswer(id: number) {
+    setAnswer((prev) => prev.includes(id) ? prev.filter((item) => item != id) : [...answer, id]);
   }
+
 
   return (
     <div className="faqInfo">
       {faqInfo.map((faq) => (
         <div key={faq.id} className="faqInfo__block">
-          <div className="faqInfo__question" onClick={() => toggle(faq.id)}>{faq.question}</div>
+          <div className="faqInfo__question" >{faq.question}</div>
+
+
 
           <svg
-            onClick={() => toggle(faq.id)}
-            className="faqInfo__icon"
+            onClick={() => visibilityAnswer(faq.id)}
+            className={`faqInfo__icon ${answer.includes(faq.id) ? "open" : ""}`}
             width="25"
             height="26"
             viewBox="0 0 25 26"
@@ -58,23 +58,17 @@ const faqInfo = () => {
               fill="white"
             />
           </svg>
-          <svg
-            onClick={() => toggle(faq.id)}
-            className="faqInfo__icon"
-            width="25"
-            height="26"
-            viewBox="0 0 25 26"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.9509 12.387L25 12.387V13.637L12.9509 13.637L12.9509 25.5002H11.5731L11.5731 13.637H0L0 12.387H11.5731V0.500244H12.9509V12.387Z"
-              fill="white"
-            />
-          </svg>
 
 
-          {answer.includes(faq.id) && <div className="faqInfo__answer">{faq.answer}</div>}
+
+
+
+
+          <div className={`faqInfo__answer-wrapper ${answer.includes(faq.id) ? "open" : ""}`}><div className="faqInfo__answer">{faq.answer}</div></div>
+
+
+
+
 
         </div>
       ))}
