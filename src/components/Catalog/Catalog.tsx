@@ -2,6 +2,7 @@ import Card from "../Card/Card";
 import Header from "../Header/Header";
 import "./Catalog.scss";
 import Faq from "../Faq/Faq";
+import Footer from "../Footer/Footer";
 
 const Catalog = () => {
   return (
@@ -27,7 +28,7 @@ const Catalog = () => {
       </section>
 
       <main className="starter">
-        <div className="catalog">
+        <div className="catalog" id="catalog">
           <div className="catalog__container">
             <div className="catalog__title">Catalog</div>
             <input className="catalog__input" placeholder="Search by title" />
@@ -45,6 +46,10 @@ const Catalog = () => {
           <Faq />
         </div>
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

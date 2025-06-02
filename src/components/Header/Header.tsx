@@ -8,10 +8,10 @@ const Header = () => {
 
         <nav>
           <ul className="header__ul">
-            <li>Catalog</li>
-            <li>FAQ</li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <div className="header__cart">
-              <li>Cart</li>
+              <li><a href="#cart">Cart</a></li>
 
               <svg
                 width="20"

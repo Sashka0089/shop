@@ -21,7 +21,16 @@
             line-height: 143%;
             color: #fff;
         }
+        a{
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                color: yellow;
+            }
+        }
     }
+    
     &__cart {
         display: flex;
         svg {

@@ -40,13 +40,13 @@ const faqInfo = () => {
     <div className="faqInfo">
       {faqInfo.map((faq) => (
         <div key={faq.id} className="faqInfo__block">
-          <div className="faqInfo__question" >{faq.question}</div>
+          <div className="faqInfo__question" onClick={() => visibilityAnswer(faq.id)}>{faq.question}</div>
 
 
 
           <svg
             onClick={() => visibilityAnswer(faq.id)}
-            className={`faqInfo__icon ${answer.includes(faq.id) ? "open" : ""}`}
+            className={`faqInfo__icon ${answer.includes(faq.id) ? "" : "open"}`}
             width="25"
             height="26"
             viewBox="0 0 25 26"

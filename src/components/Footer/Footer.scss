@@ -1,0 +1,31 @@
+.footer{
+    background: #444b58;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    &__container{
+         max-width: 1210px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        width: 117px;
+    }
+    &__logo{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 147%;
+        color: #fff;
+    }
+    &__nav{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 143%;
+        color: #fff;
+    }
+}
